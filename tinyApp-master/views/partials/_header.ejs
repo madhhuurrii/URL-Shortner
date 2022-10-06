@@ -1,0 +1,30 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-info">
+    <a class="navbar-brand" href="/urls">Hippopoto</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/urls">My URLs</a>
+        <a class="nav-item nav-link" href="/urls/new">Create New URL</a>
+      </div>
+    </div>
+    <% if(users[user_id]) { %>
+      <form action="/logout?_method=DELETE" class="form-inline" method="POST">
+        <span class="navbar-text" style="margin-right: 0.2rem;">Welcome: </span>
+        <span class="text-white" style="padding-right: 0.2rem;">
+          <%= users[user_id].email %>
+        </span>
+        <button type="submit" class="btn btn-danger">Logout</button>
+      </form>
+      <% } %>
+        <% if(!users[user_id]) { %>
+          <div class="navbar-nav">
+            <a href="/login" class="nav-item nav-link"> Login </a>
+            <a href="/register" class="nav-item nav-link"> Register </a>
+          </div>
+          <% } %>
+  </nav>
+</header>

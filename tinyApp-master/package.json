@@ -1,0 +1,38 @@
+{
+  "name": "tinyapp",
+  "version": "1.0.0",
+  "description": "TinyApp is a Full-Stack RESTful Web application built on Node and Express! * It allows users to shorten URLs!",
+  "main": "express_server.js",
+  "scripts": {
+    "start": "nodemon -L express_server.js",
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devhmac/tinyApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devhmac/tinyApp/issues"
+  },
+  "homepage": "https://github.com/devhmac/tinyApp#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "nodemon": "^2.0.7"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
