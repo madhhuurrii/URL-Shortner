@@ -1,6 +1,8 @@
 # TinyApp Project
 
 TinyApp is a Full-Stack RESTful Web application built on Node and Express!
+* Short URLs have become ubiquitous.
+* Especially popular within social networking services, short URLs have seen a significant increase in their usage over the past years, mostly due to Twitter’s restriction of message length to 140 characters. 
 * It allows users to shorten URLs!
 
 ## <ins>Features</ins>
