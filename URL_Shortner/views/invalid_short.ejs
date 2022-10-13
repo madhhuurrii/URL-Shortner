@@ -9,36 +9,23 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="../stylesheets/main.css">
-  <title>URL - TinyApp</title>
-  
+  <link rel="stylesheet" href="../stylesheets/main.css">
+  <title>Error - URL Shortner </title>
+
 </head>
 
 <body>
-  <header>
-    <%- include('partials/_header') %>
-  </header>
-  <div class="container col-lg-6 ">
-  <div class="card text-center showCard">
-    <div class="card-body ">
-      <h5 class="card-title">TinyURL for: <%= longURL %>
-      </h5>
-      <p class="card-text">Short URL: <a href="/u/<%= shortURL %>">
-          <%= shortURL %>
-        </a></p>
+
+  <div class="card text-center">
+    <div class="card-header">404</div>
+    <div class="card-body">
+      <h5 class="card-title"> There was an issue finding that page</h5>
+      <p class="card-text"> Page may not exist </p>
+      <a href="/urls" class="btn btn-danger">Back to URL's</a>
     </div>
-    <div class="card-footer text-muted">
-      <h3>Update URL</h3>
-      <form action="/urls/<%=shortURL%>?_method=PATCH" method="POST">
-        <div class="form-group mb-2">
-          <label for="updateURL">Enter Updated URL: </label>
-          <input type="text" name="updateURL" placeholder="http://" required>
-          <input type="submit" class="btn btn-success">
-        </div>
-      </form>
-    </div>
+    <div class="card-footer text-muted"></div>
   </div>
-</div>
+
 
   <!-- bootstrap js -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
